@@ -6,14 +6,14 @@ public class Mbank {
     private String customerName;
     private ArrayList<Account> accounts;
 
-    public Mbank(ArrayList<Account> accounts) {
-        this.accounts = accounts;
-    }
-    public void addAccount(Account oneAccount){
-        this.accounts.add(oneAccount);
-    }
+
 
     public Mbank() {
+        accounts = new ArrayList<Account>();
+    }
+
+    public void addAccount(Account oneAccount){
+        this.accounts.add(oneAccount);
     }
 
     public String getCustomerName() {

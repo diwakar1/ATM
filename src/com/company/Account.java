@@ -10,11 +10,18 @@ public class Account {
     private double balance;
     private double updatedBalance;
 
-/* public Account(int password, String accountNumber, double balance) {
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    private String userName;
+
+public Account(int password, String accountNumber, double balance, String userName) {
         this.password = password;
         this.accountNumber = accountNumber;
         this.balance = balance;
-    }*/
+        this.userName= userName;
+    }
 
     public int getPassword() {
         return password;
