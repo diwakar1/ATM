@@ -64,7 +64,7 @@ Account act = new Account(pin,a,iDeposit,uname);
         password = input.nextInt();
 
 for (Account ab: mbank.getAccounts()){
-    while(!(ab.getAccountNumber().equalsIgnoreCase(accountNumber) && !(ab.getPassword() != password)) || attm<=3) {
+    while(!(ab.getAccountNumber().equalsIgnoreCase(accountNumber) || !(ab.getPassword() != password)) && attm<=3) {
             System.out.println("invalid password");
 
             System.out.println(" please, insert account number: ");
